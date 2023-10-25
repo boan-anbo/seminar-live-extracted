@@ -1,0 +1,20 @@
+version: "3.8"
+# for development purpose
+services:
+  postgres:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: 'sl2'
+      POSTGRES_DB: 'sl2'
+      POSTGRES_USER: 'sl2'
+    ports:
+      - "8003:5432"
+
+  # if the django server is super slow in returning the cached result, it means it is not connecting to the redis instasnce.
+  redis:
+    image: redis
+    container_name: sl2_django_redis
+    command: redis-server --requirepass redis_secret
+    ports:
+      - "8004:6379"

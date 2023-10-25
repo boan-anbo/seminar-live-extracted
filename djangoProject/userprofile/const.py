@@ -1,0 +1,23 @@
+
+class VIEW_TYPE_ENUM:
+    MINE = 'mine'
+    TODAY = 'today'
+    WEEK = 'week'
+    MONTH = 'month'
+
+LinkTypes = [
+    (VIEW_TYPE_ENUM.MINE, VIEW_TYPE_ENUM.MINE),
+    (VIEW_TYPE_ENUM.TODAY, VIEW_TYPE_ENUM.TODAY),
+    (VIEW_TYPE_ENUM.WEEK, VIEW_TYPE_ENUM.WEEK),
+    (VIEW_TYPE_ENUM.MONTH, VIEW_TYPE_ENUM.MONTH)
+]
+
+class LANGUAGE_TYPE_ENUM:
+    CN = 'cn'
+    EN = 'en'
+
+LanguageTypes = [
+    (LANGUAGE_TYPE_ENUM.CN, LANGUAGE_TYPE_ENUM.CN),
+    (LANGUAGE_TYPE_ENUM.EN, LANGUAGE_TYPE_ENUM.EN),
+
+]

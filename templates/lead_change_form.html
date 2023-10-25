@@ -1,0 +1,21 @@
+{% extends 'admin/change_form.html' %}
+{% block title %}Webinar Leads{% endblock %}
+
+{% block content %}
+{#     {{ original.url |urlize }}#}
+{#    {{ original.fuck }}#}
+{#    {{ original.get_preview_link }}#}
+{#    {{request.build_absolute_uri }}#}
+    {% url 'leads-preview' pk=original.pk as previewlink  %}
+    <a href="{{ previewlink }}"  target="_blank">Preview Crawl Link</a>
+
+    <span>|</span>
+{#    {% url 'leads-preview' pk=original.pk as previewlink  %}#}
+    <a href="{{ original.url }}"  target="_blank">Open Url in New Tab</a>
+
+    {% url 'webinars-detail' pk=original.webinar.pk as webinarLink  %}
+    <a href="{{ webinarlink }}"  target="_blank">Go To Webinar</a>
+
+
+    {{ block.super }}
+{% endblock %}

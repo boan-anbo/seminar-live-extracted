@@ -1,0 +1,52 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "*"
+dj-rest-auth = "*"
+django-filter = "*"
+django-cors-headers = "*"
+djangorestframework = "*"
+markdown = "*"
+django-allauth = "*"
+django-crispy-forms = "*"
+django-storages = "*"
+boto3 = "*"
+django-modern-rpc = "*"
+scrapy = "*"
+django-rq = "*"
+django-redis = "*"
+ujson = "*"
+django-ckeditor = "*"
+beautifulsoup4 = "*"
+django-extensions = "*"
+werkzeug = "*"
+django-admin-object-actions = "*"
+django-json-widget = "*"
+#psycopg2 = "*"
+psycopg2-binary = "*"
+drf-yasg = "*"
+django-admin-relation-links = "*"
+django-nested-inline = "*"
+django-nested-admin = "*"
+django-rest-passwordreset = "*"
+gunicorn = "*"
+django-parler = "*"
+django-anymail = {extras = ["amazon_ses"], version = "*"}
+django-timezone-field = "*"
+locust = "*"
+django-clearcache = "*"
+tweepy = "*"
+django-q = "*"
+django-uuslug = "*"
+django-colorfield = "*"
+pypinyin = "*"
+django-admin-rangefilter = "*"
+django-debug-toolbar = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3"
